@@ -1,0 +1,423 @@
+*
+{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family:Arial, Helvetica, sans-serif;
+    cursor: url(images/doritos-cursor-resized.png), auto;
+}
+body
+{
+    background-color: rgb(248, 248, 248);
+
+}
+nav
+{
+    width: 100%;
+    display: flex;
+    align-items: center;
+    background: transparent;
+    justify-content: space-between;
+}
+nav img
+{
+    height: 100%;
+    width:6%;
+    padding-inline-start: 3px;
+}
+.navlnk
+{
+    
+    width: 70%;
+    display: flex;
+    justify-content: space-evenly;
+}
+.navlnk a
+{
+    text-decoration: none;
+    color: rgb(75, 70, 70);
+    font-weight:bold;
+    cursor: url(images/doritos-pointer-resized.png), pointer;
+}
+.navlnk a:hover
+{
+    color: orange;
+    text-shadow:0px 10px 40px #e58108;
+}
+#home
+{
+    background-color: rgb(248, 248, 248);
+    display: flex;
+    flex-wrap: wrap;
+    align-items: center;
+    justify-content: space-around;
+}
+.mypic
+{
+    height: 600px;
+    width: 600px;
+    background: url(images/mypic.jpg),url(images/splash.png);
+    background-size: cover;
+    background-position: center;
+    background-blend-mode: screen;
+    flex: 1;
+}
+.txt
+{
+    flex: 1;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    flex-wrap: wrap;
+}
+.txt h1
+{
+
+    font-weight: bold;
+    width: 75%;
+    font-size: xx-large;
+    text-align: start;
+    color:rgb(235, 143, 4);
+}
+.txt p
+{
+    font-weight:bolder;
+    width: 75%;
+    font-size: large;
+    color:rgb(63, 59, 59) ;
+}
+#aboutme
+{
+    background-image: linear-gradient(45deg,rgb(227, 105, 5),rgb(255, 174, 0),rgb(237, 101, 28));
+    height: 100vh;
+    width: 100vw;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+#aboutme div
+{
+    height: 70vh;
+    width: 60vw;
+    overflow: hidden;
+    background: rgba(255, 255, 255, 0.09);
+    border-radius: 16px;
+    box-shadow: 0 4px 30px rgba(228, 12, 12, 0.734);
+    backdrop-filter: blur(2px);
+    -webkit-backdrop-filter: blur(2px);
+    border: 1px solid rgba(255, 255, 255, 0.3);
+    display: flex;
+}
+#aboutme div:hover
+{
+    width: 62vw;
+    height: 72vh;
+    transition: 0.8s;
+    box-shadow: 0 4px 30px rgba(228, 12, 12, 0.873);
+}
+#aboutme div img
+{
+    width: 40%;
+}
+#aboutme div p
+{
+    width: 60%;
+    padding: 5vh;
+    color: white;
+    line-height: 1.5em;
+    font-weight: bold;
+    text-align: left;
+    font-family:Verdana, Geneva, Tahoma, sans-serif;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+#skills
+{
+    height: 100vh;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    background-color: rgb(248, 248, 248);
+}
+.container
+{
+    display: grid;
+    grid-template-columns: 14vw 14vw 14vw 14vw 14vw 14vw;
+    grid-template-rows: 35vh 35vh;
+    grid-gap: 1.5vh;
+    position: relative;
+}
+#skills .container div 
+{
+    display: flex;
+    padding: 5px;
+    border-radius: 10px;
+    align-items: center;
+    flex-direction: column;
+    justify-content: space-around;
+    box-shadow: 0 2px 5px rgba(30, 28, 28, 0.734);
+    background-color: rgb(198, 211, 222);
+    cursor: url(images/doritos-pointer-resized.png), pointer;
+    border: #e9e6e2 2px solid;
+}
+#skills .container div img
+{
+    height: 60%;
+    width: 60%;
+}
+#skills .container div h6
+{
+    font-weight: bold;
+    font-size: large;
+    color: rgb(49, 47, 47);
+}
+#skills .container div:hover
+{
+    position: relative;
+    height: 36vh;
+    width: 13.5vw;
+    border: none;
+    transition: 0.7s;
+    background-image: linear-gradient(45deg,rgb(227, 105, 5),rgb(255, 174, 0),rgb(237, 101, 28));
+    box-shadow: 0 5px 10px rgba(231, 134, 7, 0.849);
+    transition: all 0.5s ease;
+}
+#testimonals{
+    height: 100vh;
+    width: 100vw;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+#slide-track{
+    width: 90vw;
+    height: 80vh;
+    background-image: linear-gradient(45deg,rgb(239, 117, 18),rgb(248, 183, 43),rgb(239, 117, 18));
+    display: flex;
+    box-shadow: 0 3px 7px black;
+    justify-content: space-around;
+    align-items: center;
+    border-radius: 7px;
+    overflow: hidden;
+}
+.cards{
+    background-color: rgba(235, 223, 223, 0.701);
+    border-radius: 10px;
+    box-shadow: 0 2px 3px black;
+    width:15%;
+    margin: 2vh;
+    height:90% ;
+    overflow: hidden;
+}
+.cards #ltr{
+    font-family: cursive;
+    font-size: 30vh;
+    width: 20%;
+    color: #e9e6e2;
+    text-shadow: 1px 1px 1px #000;
+    padding-top: 50%;
+    padding-left: 15%;
+}
+.cards #qt-msg{
+    display: none;
+    color: #f68905;
+    text-shadow: 1px 1px 1px #f13131;
+}
+.cards:hover {
+    width: 25%;
+    transition: all 0.5s ease;
+}
+.cards:hover #ltr{
+    font-size: 10vh;
+    font-weight: bolder;
+}
+.cards:hover #qt-msg{
+    display: block;
+    font-size: x-large;
+    font-family:Verdana, Geneva, Tahoma, sans-serif;
+    font-weight: bold;
+    margin: 10%;
+    text-align:left;
+}
+#contact{
+    height: 100vh;
+    width: 100vw;
+    background-image: linear-gradient(45deg,rgb(228, 130, 50),rgb(244, 193, 82),rgb(228, 130, 50));
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+#contact form{
+    border: none;
+    height: 70%;
+    width: 30%;
+    box-shadow: 0 5px 10px black;
+    border-radius: 5px;
+    display: flex;
+    justify-content:space-evenly;
+    align-items: center;
+    flex-direction: column;
+}
+#contact form h4{
+    width: 80%;
+    font-family: cursive;
+    color: #e9e6e2;
+    text-shadow: 1px 1px 1px black;
+}
+#contact form input{
+    width: 80%;
+    font-family: sans-serif;
+    color: rgb(29, 25, 25);
+    border: none;
+    font-weight: 700;
+    border-radius: 5px;
+    padding: 3px;
+    background: #f0d1ab;
+}
+#contact form button{
+    width: 15vw;
+    height: 5vh;
+    border: none;
+    border-radius: 5px;
+    font-size: large;
+    font-weight: bold;
+    color: #e9e6e2;
+    background:#e58108;
+}
+footer{
+    height: 15vh;
+    border: none;
+    background: white;
+    padding: 10px;
+    overflow: hidden;
+    display: flex;
+    justify-content: space-evenly;
+    justify-content: baseline;
+}
+footer #ftr-txt{
+    width: 70%;
+    display: flex;
+    justify-content: space-evenly;
+    flex-direction: column;
+    align-items: center;
+    font-size: 2vh;
+    font-weight: bold;
+    color: #171616;
+}
+footer #social{
+    display: flex;
+    width: 30%;
+    justify-content: space-around;
+    align-items: center;
+}
+footer #social img{
+    height: 30px;
+    width: 30px;
+}
+
+
+@media (max-width: 768px){
+    .navlnk
+    {
+        display: none;
+    }
+    .mypic {
+        height: 250px; 
+        width: 250px;  
+        background-size:cover;
+    }
+    .txt h1
+    {
+        font-size:medium;
+    }
+    .txt p
+    {
+        font-size: small;
+    }
+    #aboutme
+    {
+        height: 35vh;
+    }
+    #aboutme div
+    {
+        height: 70%;
+        width: 70%;
+        pointer-events: none;
+    }
+    #aboutme div p
+    {
+        padding: 1vh;
+        justify-content: normal;
+        text-align: left;
+        font-size: 6px;
+        font-weight: bolder;
+    }
+    #skills
+    {
+        height: 40vh;
+        overflow: hidden;
+    }
+    .container
+    {
+        grid-template-columns: 16vw 16vw 16vw 16vw;
+        grid-template-rows: 10vh 10vh 10vh ;
+    }
+    .container div
+    {
+        pointer-events: none;
+    }
+    .container div img
+    {
+        width: 80%;
+        height: 80%;
+    }
+    .container div h6
+    {
+        display: none;
+    }
+    #testimonals{
+        height: 50vh;
+    }
+    #slide-track{
+        height: 40vh;
+    }
+    .cards #ltr{
+        font-size: 6vh;
+    }
+    .cards:hover #qt-msg{
+        font-size: 9px;
+    }
+    #contact{
+        height: 50vh;
+    }
+    #contact form{
+        width: 60%;
+    }
+    #contact form h2{
+        font-size: 15px;
+    }
+    #contact form h4{
+        font-size: 9px;
+    }
+    #contact form input{
+        font-size: 8px;
+    }
+    #contact form button{
+        font-size: 14px;
+        height: 25px;
+    }
+    footer{
+        flex-direction: column;
+        justify-content: space-evenly;
+        align-items: center;
+    }
+    footer #ftr-txt{
+        font-size: 7px;
+    }
+    footer #social img{
+        height: 20px;
+        width: 20px;
+    }
+}
